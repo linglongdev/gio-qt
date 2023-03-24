@@ -1,0 +1,22 @@
+package:
+  id: gio-qt
+  version: 0.0.11
+  kind: lib
+
+runtime:
+  id: org.deepin.Runtime
+  version: 20.5.0
+
+variables:
+  extra_args: |
+    -DBUILD_DOCS=OFF
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/gio-qt.git
+  version: 0.0.11
+  commit: 0ee70cf69866e532bba65db8be6b342125bf6026
+
+  patch: []
+build:
+  kind: cmake
